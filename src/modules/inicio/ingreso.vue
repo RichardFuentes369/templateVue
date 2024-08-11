@@ -1,11 +1,14 @@
 <template>
   <div class="">
-    Template user
+    This is a page ingreso
   </div>    
 </template>
 <script lang="ts">
+
 export default {
   mixins: [],
+  components: {
+  },
   data() {
     return {
     };
