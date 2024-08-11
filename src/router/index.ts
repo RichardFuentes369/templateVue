@@ -6,7 +6,19 @@ const router = createRouter({
     {
       path: '/',
       children: [
-        { path: '', component: () => import('../modules/index/pages/index.vue') }
+        { path: '', component: () => import('@modules/inicio/pages/index/index.vue') }
+      ]
+    },
+    {
+      path: '/admin',
+      children: [
+        { path: '', component: () => import('@modules/inicio/pages/principal/admin.vue') }
+      ]
+    },
+    {
+      path: '/user',
+      children: [
+        { path: '', component: () => import('@modules/inicio/pages/principal/user.vue') }
       ]
     },
   ]
